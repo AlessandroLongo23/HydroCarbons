@@ -1,0 +1,392 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-image: url("background.jpg");
+    background-position: -220px -363px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    background-image: url("../../../Patterns/white waves.png");
+    background-color: var(--light);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#main_header {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+.info {
+    background-image: url("../../../Patterns/white waves.png");
+    background-color: var(--light);
+    background-blend-mode: multiply;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    right: 0;
+}
+
+h4 {
+    font-size: 48px;
+    margin: 30px 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+p a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+#close_info {
+    color: black;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+#close_info:hover {
+    opacity: 1;
+}
+
+.icon {
+    font-size: 2em;
+    color: black;
+    padding: 0px 15px;
+    margin: auto;
+    transition: 0.3s;
+    cursor: pointer;
+    color: black;
+    opacity: 0.5;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+.button {
+    font-weight: bold;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: var(--dark);
+    transition: all 0.4s ease-out;
+}
+
+.button:hover {
+    background-color: white;
+    border-color: var(--dark);
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: var(--light);
+    transition: all 0s;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#sx {
+    flex: 3;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#functional_groups_list {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0px;
+    margin: 90px 25px 25px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input[type="radio"]+label {
+    background-color: var(--light);
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.4s ease-out;
+}
+
+input[type="radio"]:checked+label {
+    background-color: var(--dark);
+    color: white;
+    cursor: pointer;
+}
+
+.caption {
+    font-size: 18px;
+}
+
+.gf_btn {
+    width: 130px;
+    height: 60px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+#CH3_label {
+    width: 90px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#CH2_label {
+    width: 40px;
+    height: 29px;
+    font-size: 15px;
+    padding: 10px 0px 0px 0px;
+    border-radius: 0px 10px 0px 0;
+    margin: 0px;
+}
+
+#CH_label {
+    width: 40px;
+    height: 29px;
+    font-size: 15px;
+    padding: 10px 0px 0px 0px;
+    border-radius: 0px 0px 10px 0px;
+    margin: 0px;
+}
+
+#COOH_label, #COO_label, #CON_label, #NH2_label {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#flscr_btn {
+    cursor: pointer;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    object-fit: scale-down;
+    padding: 5px;
+}
+
+#reset_btn {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0px;
+    margin: auto 0px;
+}
+
+#molecule_name {
+    order: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 5px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 25px 0px 5px 0px;
+}
+
+#cnv_2D {
+    order: 2;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#cnv_3D {
+    order: 3;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#dx {
+    flex: 3;
+    text-align: center;
+    justify-content: center;
+}
+
+#halogens_list {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0px 0px 10px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 50px 30px;
+}
+
+.hal_btn {
+    width: 40px;
+    height: 40px;
+    padding: 15px 10px 5px 10px;
+    margin: 0px 10px;
+}
+
+#checkbox_list {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0px 30px;
+    padding: 10px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -webkit-transition: .3s;
+    border-radius: 25%;
+    background: var(--light);
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+}
+
+input[type="checkbox"]:hover, input[type="checkbox"]:checked {
+    background: var(--dark);
+    opacity: 1;
+}
+
+input:hover {
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    margin: 10px 0px;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.container input {
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    opacity: 0.5;
+    -webkit-transition: .3s;
+    border-radius: 25%;
+    border: 1px solid var(--dark);
+    background-color: var(--light);
+    margin-left: 20px;
+}
+
+.container:hover input~.checkmark {
+    background-color: var(--light);
+    opacity: 1;
+}
+
+.container input:checked~.checkmark {
+    background-color: var(--dark);
+    border-color: var(--dark);
+    opacity: 1;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#bottom_section {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 30px 30px 0px;
+}
+
+#label_2D, #label_3D {
+    padding: 10px 30px;
+}
+
+.arr_btn {
+    align-self: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 0px 0px 5px 0px;
+}
+
+footer {
+    background-image: url("../../../Patterns/white waves.png");
+    background-color: var(--light);
+    background-blend-mode: multiply;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: black;
+}
+
+#author, #class, #version {
+    flex: 1;
+    text-align: center;
+    margin: 18px 0px;
+}
